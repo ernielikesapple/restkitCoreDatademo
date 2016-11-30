@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BFC819BBE26CB48C73564D7 /* libPods-doubanIOSwithCoreData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A91EE3D92516C790B82662 /* libPods-doubanIOSwithCoreData.a */; };
+		6D792DF61DEEC5DF0058792D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D792DF51DEEC5DF0058792D /* main.m */; };
+		6D792DF91DEEC5DF0058792D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D792DF81DEEC5DF0058792D /* AppDelegate.m */; };
+		6D792DFC1DEEC5DF0058792D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D792DFB1DEEC5DF0058792D /* ViewController.m */; };
+		6D792DFF1DEEC5DF0058792D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D792DFD1DEEC5DF0058792D /* Main.storyboard */; };
+		6D792E021DEEC5DF0058792D /* doubanIOSwithCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D792E001DEEC5DF0058792D /* doubanIOSwithCoreData.xcdatamodeld */; };
+		6D792E041DEEC5DF0058792D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D792E031DEEC5DF0058792D /* Assets.xcassets */; };
+		6D792E071DEEC5DF0058792D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D792E051DEEC5DF0058792D /* LaunchScreen.storyboard */; };
+		6D792E121DEEC5DF0058792D /* doubanIOSwithCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D792E111DEEC5DF0058792D /* doubanIOSwithCoreDataTests.m */; };
+		6D792E1D1DEEC5DF0058792D /* doubanIOSwithCoreDataUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D792E1C1DEEC5DF0058792D /* doubanIOSwithCoreDataUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D792E0E1DEEC5DF0058792D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D792DE91DEEC5DF0058792D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D792DF01DEEC5DF0058792D;
+			remoteInfo = doubanIOSwithCoreData;
+		};
+		6D792E191DEEC5DF0058792D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D792DE91DEEC5DF0058792D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D792DF01DEEC5DF0058792D;
+			remoteInfo = doubanIOSwithCoreData;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A91EE3D92516C790B82662 /* libPods-doubanIOSwithCoreData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-doubanIOSwithCoreData.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D792DF11DEEC5DF0058792D /* doubanIOSwithCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doubanIOSwithCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D792DF51DEEC5DF0058792D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6D792DF71DEEC5DF0058792D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6D792DF81DEEC5DF0058792D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6D792DFA1DEEC5DF0058792D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6D792DFB1DEEC5DF0058792D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6D792DFE1DEEC5DF0058792D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D792E011DEEC5DF0058792D /* doubanIOSwithCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = doubanIOSwithCoreData.xcdatamodel; sourceTree = "<group>"; };
+		6D792E031DEEC5DF0058792D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D792E061DEEC5DF0058792D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D792E081DEEC5DF0058792D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D792E0D1DEEC5DF0058792D /* doubanIOSwithCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = doubanIOSwithCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D792E111DEEC5DF0058792D /* doubanIOSwithCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = doubanIOSwithCoreDataTests.m; sourceTree = "<group>"; };
+		6D792E131DEEC5DF0058792D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D792E181DEEC5DF0058792D /* doubanIOSwithCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = doubanIOSwithCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D792E1C1DEEC5DF0058792D /* doubanIOSwithCoreDataUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = doubanIOSwithCoreDataUITests.m; sourceTree = "<group>"; };
+		6D792E1E1DEEC5DF0058792D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3B6EC0D5175CEE3B866016C /* Pods-doubanIOSwithCoreData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doubanIOSwithCoreData.release.xcconfig"; path = "Pods/Target Support Files/Pods-doubanIOSwithCoreData/Pods-doubanIOSwithCoreData.release.xcconfig"; sourceTree = "<group>"; };
+		BC537CF1A64EF7FCBCDFD726 /* Pods-doubanIOSwithCoreData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doubanIOSwithCoreData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doubanIOSwithCoreData/Pods-doubanIOSwithCoreData.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D792DEE1DEEC5DF0058792D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BFC819BBE26CB48C73564D7 /* libPods-doubanIOSwithCoreData.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D792E0A1DEEC5DF0058792D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D792E151DEEC5DF0058792D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D792DE81DEEC5DF0058792D = {
+			isa = PBXGroup;
+			children = (
+				6D792DF31DEEC5DF0058792D /* doubanIOSwithCoreData */,
+				6D792E101DEEC5DF0058792D /* doubanIOSwithCoreDataTests */,
+				6D792E1B1DEEC5DF0058792D /* doubanIOSwithCoreDataUITests */,
+				6D792DF21DEEC5DF0058792D /* Products */,
+				70EF815021C8505A49D5C8E0 /* Pods */,
+				E49CACF7FC160F1770E66AE1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6D792DF21DEEC5DF0058792D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D792DF11DEEC5DF0058792D /* doubanIOSwithCoreData.app */,
+				6D792E0D1DEEC5DF0058792D /* doubanIOSwithCoreDataTests.xctest */,
+				6D792E181DEEC5DF0058792D /* doubanIOSwithCoreDataUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D792DF31DEEC5DF0058792D /* doubanIOSwithCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6D792DF71DEEC5DF0058792D /* AppDelegate.h */,
+				6D792DF81DEEC5DF0058792D /* AppDelegate.m */,
+				6D792DFA1DEEC5DF0058792D /* ViewController.h */,
+				6D792DFB1DEEC5DF0058792D /* ViewController.m */,
+				6D792DFD1DEEC5DF0058792D /* Main.storyboard */,
+				6D792E031DEEC5DF0058792D /* Assets.xcassets */,
+				6D792E051DEEC5DF0058792D /* LaunchScreen.storyboard */,
+				6D792E081DEEC5DF0058792D /* Info.plist */,
+				6D792E001DEEC5DF0058792D /* doubanIOSwithCoreData.xcdatamodeld */,
+				6D792DF41DEEC5DF0058792D /* Supporting Files */,
+			);
+			path = doubanIOSwithCoreData;
+			sourceTree = "<group>";
+		};
+		6D792DF41DEEC5DF0058792D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D792DF51DEEC5DF0058792D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D792E101DEEC5DF0058792D /* doubanIOSwithCoreDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D792E111DEEC5DF0058792D /* doubanIOSwithCoreDataTests.m */,
+				6D792E131DEEC5DF0058792D /* Info.plist */,
+			);
+			path = doubanIOSwithCoreDataTests;
+			sourceTree = "<group>";
+		};
+		6D792E1B1DEEC5DF0058792D /* doubanIOSwithCoreDataUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6D792E1C1DEEC5DF0058792D /* doubanIOSwithCoreDataUITests.m */,
+				6D792E1E1DEEC5DF0058792D /* Info.plist */,
+			);
+			path = doubanIOSwithCoreDataUITests;
+			sourceTree = "<group>";
+		};
+		70EF815021C8505A49D5C8E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC537CF1A64EF7FCBCDFD726 /* Pods-doubanIOSwithCoreData.debug.xcconfig */,
+				A3B6EC0D5175CEE3B866016C /* Pods-doubanIOSwithCoreData.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E49CACF7FC160F1770E66AE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00A91EE3D92516C790B82662 /* libPods-doubanIOSwithCoreData.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D792DF01DEEC5DF0058792D /* doubanIOSwithCoreData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D792E211DEEC5DF0058792D /* Build configuration list for PBXNativeTarget "doubanIOSwithCoreData" */;
+			buildPhases = (
+				0A89341D0B159F4D87BEE7E6 /* [CP] Check Pods Manifest.lock */,
+				6D792DED1DEEC5DF0058792D /* Sources */,
+				6D792DEE1DEEC5DF0058792D /* Frameworks */,
+				6D792DEF1DEEC5DF0058792D /* Resources */,
+				5C8CF4C96B01401C365DE91C /* [CP] Embed Pods Frameworks */,
+				462EA70409AA34885468E40F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = doubanIOSwithCoreData;
+			productName = doubanIOSwithCoreData;
+			productReference = 6D792DF11DEEC5DF0058792D /* doubanIOSwithCoreData.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D792E0C1DEEC5DF0058792D /* doubanIOSwithCoreDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D792E241DEEC5DF0058792D /* Build configuration list for PBXNativeTarget "doubanIOSwithCoreDataTests" */;
+			buildPhases = (
+				6D792E091DEEC5DF0058792D /* Sources */,
+				6D792E0A1DEEC5DF0058792D /* Frameworks */,
+				6D792E0B1DEEC5DF0058792D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D792E0F1DEEC5DF0058792D /* PBXTargetDependency */,
+			);
+			name = doubanIOSwithCoreDataTests;
+			productName = doubanIOSwithCoreDataTests;
+			productReference = 6D792E0D1DEEC5DF0058792D /* doubanIOSwithCoreDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6D792E171DEEC5DF0058792D /* doubanIOSwithCoreDataUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D792E271DEEC5DF0058792D /* Build configuration list for PBXNativeTarget "doubanIOSwithCoreDataUITests" */;
+			buildPhases = (
+				6D792E141DEEC5DF0058792D /* Sources */,
+				6D792E151DEEC5DF0058792D /* Frameworks */,
+				6D792E161DEEC5DF0058792D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D792E1A1DEEC5DF0058792D /* PBXTargetDependency */,
+			);
+			name = doubanIOSwithCoreDataUITests;
+			productName = doubanIOSwithCoreDataUITests;
+			productReference = 6D792E181DEEC5DF0058792D /* doubanIOSwithCoreDataUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D792DE91DEEC5DF0058792D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ernie.cheng;
+				TargetAttributes = {
+					6D792DF01DEEC5DF0058792D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					6D792E0C1DEEC5DF0058792D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 6D792DF01DEEC5DF0058792D;
+					};
+					6D792E171DEEC5DF0058792D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 6D792DF01DEEC5DF0058792D;
+					};
+				};
+			};
+			buildConfigurationList = 6D792DEC1DEEC5DF0058792D /* Build configuration list for PBXProject "doubanIOSwithCoreData" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D792DE81DEEC5DF0058792D;
+			productRefGroup = 6D792DF21DEEC5DF0058792D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D792DF01DEEC5DF0058792D /* doubanIOSwithCoreData */,
+				6D792E0C1DEEC5DF0058792D /* doubanIOSwithCoreDataTests */,
+				6D792E171DEEC5DF0058792D /* doubanIOSwithCoreDataUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D792DEF1DEEC5DF0058792D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D792E071DEEC5DF0058792D /* LaunchScreen.storyboard in Resources */,
+				6D792E041DEEC5DF0058792D /* Assets.xcassets in Resources */,
+				6D792DFF1DEEC5DF0058792D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D792E0B1DEEC5DF0058792D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D792E161DEEC5DF0058792D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A89341D0B159F4D87BEE7E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		462EA70409AA34885468E40F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-doubanIOSwithCoreData/Pods-doubanIOSwithCoreData-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C8CF4C96B01401C365DE91C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-doubanIOSwithCoreData/Pods-doubanIOSwithCoreData-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D792DED1DEEC5DF0058792D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D792DFC1DEEC5DF0058792D /* ViewController.m in Sources */,
+				6D792E021DEEC5DF0058792D /* doubanIOSwithCoreData.xcdatamodeld in Sources */,
+				6D792DF91DEEC5DF0058792D /* AppDelegate.m in Sources */,
+				6D792DF61DEEC5DF0058792D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D792E091DEEC5DF0058792D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D792E121DEEC5DF0058792D /* doubanIOSwithCoreDataTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D792E141DEEC5DF0058792D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D792E1D1DEEC5DF0058792D /* doubanIOSwithCoreDataUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D792E0F1DEEC5DF0058792D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D792DF01DEEC5DF0058792D /* doubanIOSwithCoreData */;
+			targetProxy = 6D792E0E1DEEC5DF0058792D /* PBXContainerItemProxy */;
+		};
+		6D792E1A1DEEC5DF0058792D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D792DF01DEEC5DF0058792D /* doubanIOSwithCoreData */;
+			targetProxy = 6D792E191DEEC5DF0058792D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6D792DFD1DEEC5DF0058792D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D792DFE1DEEC5DF0058792D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D792E051DEEC5DF0058792D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D792E061DEEC5DF0058792D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D792E1F1DEEC5DF0058792D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6D792E201DEEC5DF0058792D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D792E221DEEC5DF0058792D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC537CF1A64EF7FCBCDFD726 /* Pods-doubanIOSwithCoreData.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = doubanIOSwithCoreData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ernie.perficient.doubanIOSwithCoreData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6D792E231DEEC5DF0058792D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3B6EC0D5175CEE3B866016C /* Pods-doubanIOSwithCoreData.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = doubanIOSwithCoreData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ernie.perficient.doubanIOSwithCoreData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6D792E251DEEC5DF0058792D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = doubanIOSwithCoreDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ernie.perficient.doubanIOSwithCoreDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/doubanIOSwithCoreData.app/doubanIOSwithCoreData";
+			};
+			name = Debug;
+		};
+		6D792E261DEEC5DF0058792D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = doubanIOSwithCoreDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ernie.perficient.doubanIOSwithCoreDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/doubanIOSwithCoreData.app/doubanIOSwithCoreData";
+			};
+			name = Release;
+		};
+		6D792E281DEEC5DF0058792D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = doubanIOSwithCoreDataUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ernie.perficient.doubanIOSwithCoreDataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = doubanIOSwithCoreData;
+			};
+			name = Debug;
+		};
+		6D792E291DEEC5DF0058792D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = doubanIOSwithCoreDataUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ernie.perficient.doubanIOSwithCoreDataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = doubanIOSwithCoreData;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D792DEC1DEEC5DF0058792D /* Build configuration list for PBXProject "doubanIOSwithCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D792E1F1DEEC5DF0058792D /* Debug */,
+				6D792E201DEEC5DF0058792D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D792E211DEEC5DF0058792D /* Build configuration list for PBXNativeTarget "doubanIOSwithCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D792E221DEEC5DF0058792D /* Debug */,
+				6D792E231DEEC5DF0058792D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6D792E241DEEC5DF0058792D /* Build configuration list for PBXNativeTarget "doubanIOSwithCoreDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D792E251DEEC5DF0058792D /* Debug */,
+				6D792E261DEEC5DF0058792D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6D792E271DEEC5DF0058792D /* Build configuration list for PBXNativeTarget "doubanIOSwithCoreDataUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D792E281DEEC5DF0058792D /* Debug */,
+				6D792E291DEEC5DF0058792D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6D792E001DEEC5DF0058792D /* doubanIOSwithCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6D792E011DEEC5DF0058792D /* doubanIOSwithCoreData.xcdatamodel */,
+			);
+			currentVersion = 6D792E011DEEC5DF0058792D /* doubanIOSwithCoreData.xcdatamodel */;
+			path = doubanIOSwithCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6D792DE91DEEC5DF0058792D /* Project object */;
+}
