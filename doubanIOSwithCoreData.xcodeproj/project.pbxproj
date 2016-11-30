@@ -17,6 +17,16 @@
 		6D792E071DEEC5DF0058792D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D792E051DEEC5DF0058792D /* LaunchScreen.storyboard */; };
 		6D792E121DEEC5DF0058792D /* doubanIOSwithCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D792E111DEEC5DF0058792D /* doubanIOSwithCoreDataTests.m */; };
 		6D792E1D1DEEC5DF0058792D /* doubanIOSwithCoreDataUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D792E1C1DEEC5DF0058792D /* doubanIOSwithCoreDataUITests.m */; };
+		6DBBF5B61DEECA3B00495C1C /* IIListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBF5B51DEECA3B00495C1C /* IIListViewController.m */; };
+		6DBBF5B91DEECAB200495C1C /* IIBookCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBF5B81DEECAB200495C1C /* IIBookCellTableViewCell.m */; };
+		6DBBF5BF1DEECD8600495C1C /* Book+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBF5BC1DEECD8600495C1C /* Book+CoreDataProperties.m */; };
+		6DBBF5C01DEECD8600495C1C /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBF5BE1DEECD8600495C1C /* Book.m */; };
+		6DEEEE631DEECF0300208F49 /* IISvcUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEEEE621DEECF0300208F49 /* IISvcUtil.m */; };
+		6DEEEE661DEED12600208F49 /* COCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEEEE651DEED12600208F49 /* COCache.m */; };
+		6DEEEE691DEED14600208F49 /* COUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEEEE681DEED14600208F49 /* COUtils.m */; };
+		6DEEEE6C1DEED18000208F49 /* NSObject+COAssociation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEEEE6B1DEED18000208F49 /* NSObject+COAssociation.m */; };
+		6DEEEE6F1DEED1F900208F49 /* NSString+COMd5.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEEEE6E1DEED1F900208F49 /* NSString+COMd5.m */; };
+		6DEEEE751DEED26E00208F49 /* UIImageView+CONetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEEEE741DEED26E00208F49 /* UIImageView+CONetwork.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +65,26 @@
 		6D792E181DEEC5DF0058792D /* doubanIOSwithCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = doubanIOSwithCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D792E1C1DEEC5DF0058792D /* doubanIOSwithCoreDataUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = doubanIOSwithCoreDataUITests.m; sourceTree = "<group>"; };
 		6D792E1E1DEEC5DF0058792D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DBBF5B41DEECA3B00495C1C /* IIListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIListViewController.h; sourceTree = "<group>"; };
+		6DBBF5B51DEECA3B00495C1C /* IIListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIListViewController.m; sourceTree = "<group>"; };
+		6DBBF5B71DEECAB100495C1C /* IIBookCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIBookCellTableViewCell.h; sourceTree = "<group>"; };
+		6DBBF5B81DEECAB200495C1C /* IIBookCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIBookCellTableViewCell.m; sourceTree = "<group>"; };
+		6DBBF5BB1DEECD8600495C1C /* Book+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Book+CoreDataProperties.h"; sourceTree = "<group>"; };
+		6DBBF5BC1DEECD8600495C1C /* Book+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Book+CoreDataProperties.m"; sourceTree = "<group>"; };
+		6DBBF5BD1DEECD8600495C1C /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		6DBBF5BE1DEECD8600495C1C /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		6DEEEE611DEECF0300208F49 /* IISvcUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IISvcUtil.h; sourceTree = "<group>"; };
+		6DEEEE621DEECF0300208F49 /* IISvcUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IISvcUtil.m; sourceTree = "<group>"; };
+		6DEEEE641DEED12600208F49 /* COCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COCache.h; sourceTree = "<group>"; };
+		6DEEEE651DEED12600208F49 /* COCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COCache.m; sourceTree = "<group>"; };
+		6DEEEE671DEED14600208F49 /* COUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUtils.h; sourceTree = "<group>"; };
+		6DEEEE681DEED14600208F49 /* COUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUtils.m; sourceTree = "<group>"; };
+		6DEEEE6A1DEED18000208F49 /* NSObject+COAssociation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+COAssociation.h"; sourceTree = "<group>"; };
+		6DEEEE6B1DEED18000208F49 /* NSObject+COAssociation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+COAssociation.m"; sourceTree = "<group>"; };
+		6DEEEE6D1DEED1F900208F49 /* NSString+COMd5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+COMd5.h"; sourceTree = "<group>"; };
+		6DEEEE6E1DEED1F900208F49 /* NSString+COMd5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+COMd5.m"; sourceTree = "<group>"; };
+		6DEEEE731DEED26E00208F49 /* UIImageView+CONetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CONetwork.h"; sourceTree = "<group>"; };
+		6DEEEE741DEED26E00208F49 /* UIImageView+CONetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CONetwork.m"; sourceTree = "<group>"; };
 		A3B6EC0D5175CEE3B866016C /* Pods-doubanIOSwithCoreData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doubanIOSwithCoreData.release.xcconfig"; path = "Pods/Target Support Files/Pods-doubanIOSwithCoreData/Pods-doubanIOSwithCoreData.release.xcconfig"; sourceTree = "<group>"; };
 		BC537CF1A64EF7FCBCDFD726 /* Pods-doubanIOSwithCoreData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doubanIOSwithCoreData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doubanIOSwithCoreData/Pods-doubanIOSwithCoreData.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +140,8 @@
 		6D792DF31DEEC5DF0058792D /* doubanIOSwithCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				6DEEEE5B1DEECDDD00208F49 /* CO */,
+				6DBBF5BA1DEECD5800495C1C /* CoreData */,
 				6D792DF71DEEC5DF0058792D /* AppDelegate.h */,
 				6D792DF81DEEC5DF0058792D /* AppDelegate.m */,
 				6D792DFA1DEEC5DF0058792D /* ViewController.h */,
@@ -120,6 +152,12 @@
 				6D792E081DEEC5DF0058792D /* Info.plist */,
 				6D792E001DEEC5DF0058792D /* doubanIOSwithCoreData.xcdatamodeld */,
 				6D792DF41DEEC5DF0058792D /* Supporting Files */,
+				6DBBF5B41DEECA3B00495C1C /* IIListViewController.h */,
+				6DBBF5B51DEECA3B00495C1C /* IIListViewController.m */,
+				6DBBF5B71DEECAB100495C1C /* IIBookCellTableViewCell.h */,
+				6DBBF5B81DEECAB200495C1C /* IIBookCellTableViewCell.m */,
+				6DEEEE611DEECF0300208F49 /* IISvcUtil.h */,
+				6DEEEE621DEECF0300208F49 /* IISvcUtil.m */,
 			);
 			path = doubanIOSwithCoreData;
 			sourceTree = "<group>";
@@ -148,6 +186,34 @@
 				6D792E1E1DEEC5DF0058792D /* Info.plist */,
 			);
 			path = doubanIOSwithCoreDataUITests;
+			sourceTree = "<group>";
+		};
+		6DBBF5BA1DEECD5800495C1C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6DBBF5BB1DEECD8600495C1C /* Book+CoreDataProperties.h */,
+				6DBBF5BC1DEECD8600495C1C /* Book+CoreDataProperties.m */,
+				6DBBF5BD1DEECD8600495C1C /* Book.h */,
+				6DBBF5BE1DEECD8600495C1C /* Book.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		6DEEEE5B1DEECDDD00208F49 /* CO */ = {
+			isa = PBXGroup;
+			children = (
+				6DEEEE641DEED12600208F49 /* COCache.h */,
+				6DEEEE651DEED12600208F49 /* COCache.m */,
+				6DEEEE671DEED14600208F49 /* COUtils.h */,
+				6DEEEE681DEED14600208F49 /* COUtils.m */,
+				6DEEEE6A1DEED18000208F49 /* NSObject+COAssociation.h */,
+				6DEEEE6B1DEED18000208F49 /* NSObject+COAssociation.m */,
+				6DEEEE6D1DEED1F900208F49 /* NSString+COMd5.h */,
+				6DEEEE6E1DEED1F900208F49 /* NSString+COMd5.m */,
+				6DEEEE731DEED26E00208F49 /* UIImageView+CONetwork.h */,
+				6DEEEE741DEED26E00208F49 /* UIImageView+CONetwork.m */,
+			);
+			name = CO;
 			sourceTree = "<group>";
 		};
 		70EF815021C8505A49D5C8E0 /* Pods */ = {
@@ -308,7 +374,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		462EA70409AA34885468E40F /* [CP] Copy Pods Resources */ = {
@@ -349,8 +415,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D792DFC1DEEC5DF0058792D /* ViewController.m in Sources */,
+				6DBBF5B61DEECA3B00495C1C /* IIListViewController.m in Sources */,
+				6DBBF5B91DEECAB200495C1C /* IIBookCellTableViewCell.m in Sources */,
+				6DEEEE751DEED26E00208F49 /* UIImageView+CONetwork.m in Sources */,
 				6D792E021DEEC5DF0058792D /* doubanIOSwithCoreData.xcdatamodeld in Sources */,
+				6DEEEE661DEED12600208F49 /* COCache.m in Sources */,
+				6DEEEE6C1DEED18000208F49 /* NSObject+COAssociation.m in Sources */,
+				6DEEEE6F1DEED1F900208F49 /* NSString+COMd5.m in Sources */,
+				6DBBF5C01DEECD8600495C1C /* Book.m in Sources */,
+				6DEEEE691DEED14600208F49 /* COUtils.m in Sources */,
+				6DEEEE631DEECF0300208F49 /* IISvcUtil.m in Sources */,
 				6D792DF91DEEC5DF0058792D /* AppDelegate.m in Sources */,
+				6DBBF5BF1DEECD8600495C1C /* Book+CoreDataProperties.m in Sources */,
 				6D792DF61DEEC5DF0058792D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +653,7 @@
 				6D792E231DEEC5DF0058792D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D792E241DEEC5DF0058792D /* Build configuration list for PBXNativeTarget "doubanIOSwithCoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -585,6 +662,7 @@
 				6D792E261DEEC5DF0058792D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D792E271DEEC5DF0058792D /* Build configuration list for PBXNativeTarget "doubanIOSwithCoreDataUITests" */ = {
 			isa = XCConfigurationList;
@@ -593,6 +671,7 @@
 				6D792E291DEEC5DF0058792D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
