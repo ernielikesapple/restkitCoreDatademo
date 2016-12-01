@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3BFC819BBE26CB48C73564D7 /* libPods-doubanIOSwithCoreData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A91EE3D92516C790B82662 /* libPods-doubanIOSwithCoreData.a */; };
+		6D2E55A21DF0213900C16A11 /* fullHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2E55A11DF0213900C16A11 /* fullHistoryViewController.m */; };
 		6D792DF61DEEC5DF0058792D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D792DF51DEEC5DF0058792D /* main.m */; };
 		6D792DF91DEEC5DF0058792D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D792DF81DEEC5DF0058792D /* AppDelegate.m */; };
 		6D792DFC1DEEC5DF0058792D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D792DFB1DEEC5DF0058792D /* ViewController.m */; };
@@ -27,7 +28,6 @@
 		6DEEEE6C1DEED18000208F49 /* NSObject+COAssociation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEEEE6B1DEED18000208F49 /* NSObject+COAssociation.m */; };
 		6DEEEE6F1DEED1F900208F49 /* NSString+COMd5.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEEEE6E1DEED1F900208F49 /* NSString+COMd5.m */; };
 		6DEEEE751DEED26E00208F49 /* UIImageView+CONetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEEEE741DEED26E00208F49 /* UIImageView+CONetwork.m */; };
-		6DFE613E1DEFE99200349929 /* fullHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE613D1DEFE99200349929 /* fullHistoryViewController.m */; };
 		6DFE61441DEFEA4300349929 /* fullHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE61431DEFEA4300349929 /* fullHistoryTableViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +50,8 @@
 
 /* Begin PBXFileReference section */
 		00A91EE3D92516C790B82662 /* libPods-doubanIOSwithCoreData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-doubanIOSwithCoreData.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D2E55A01DF0213900C16A11 /* fullHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fullHistoryViewController.h; sourceTree = "<group>"; };
+		6D2E55A11DF0213900C16A11 /* fullHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fullHistoryViewController.m; sourceTree = "<group>"; };
 		6D792DF11DEEC5DF0058792D /* doubanIOSwithCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doubanIOSwithCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D792DF51DEEC5DF0058792D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6D792DF71DEEC5DF0058792D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,8 +89,6 @@
 		6DEEEE6E1DEED1F900208F49 /* NSString+COMd5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+COMd5.m"; sourceTree = "<group>"; };
 		6DEEEE731DEED26E00208F49 /* UIImageView+CONetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CONetwork.h"; sourceTree = "<group>"; };
 		6DEEEE741DEED26E00208F49 /* UIImageView+CONetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CONetwork.m"; sourceTree = "<group>"; };
-		6DFE613C1DEFE99200349929 /* fullHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fullHistoryViewController.h; sourceTree = "<group>"; };
-		6DFE613D1DEFE99200349929 /* fullHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fullHistoryViewController.m; sourceTree = "<group>"; };
 		6DFE61421DEFEA4300349929 /* fullHistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fullHistoryTableViewCell.h; sourceTree = "<group>"; };
 		6DFE61431DEFEA4300349929 /* fullHistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fullHistoryTableViewCell.m; sourceTree = "<group>"; };
 		A3B6EC0D5175CEE3B866016C /* Pods-doubanIOSwithCoreData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doubanIOSwithCoreData.release.xcconfig"; path = "Pods/Target Support Files/Pods-doubanIOSwithCoreData/Pods-doubanIOSwithCoreData.release.xcconfig"; sourceTree = "<group>"; };
@@ -226,10 +226,10 @@
 		6DFE613B1DEFE93800349929 /* fullHistoryTablewView */ = {
 			isa = PBXGroup;
 			children = (
-				6DFE613C1DEFE99200349929 /* fullHistoryViewController.h */,
-				6DFE613D1DEFE99200349929 /* fullHistoryViewController.m */,
 				6DFE61421DEFEA4300349929 /* fullHistoryTableViewCell.h */,
 				6DFE61431DEFEA4300349929 /* fullHistoryTableViewCell.m */,
+				6D2E55A01DF0213900C16A11 /* fullHistoryViewController.h */,
+				6D2E55A11DF0213900C16A11 /* fullHistoryViewController.m */,
 			);
 			name = fullHistoryTablewView;
 			sourceTree = "<group>";
@@ -438,10 +438,10 @@
 				6DEEEE751DEED26E00208F49 /* UIImageView+CONetwork.m in Sources */,
 				6D792E021DEEC5DF0058792D /* doubanIOSwithCoreData.xcdatamodeld in Sources */,
 				6DEEEE661DEED12600208F49 /* COCache.m in Sources */,
-				6DFE613E1DEFE99200349929 /* fullHistoryViewController.m in Sources */,
 				6DEEEE6C1DEED18000208F49 /* NSObject+COAssociation.m in Sources */,
 				6DEEEE6F1DEED1F900208F49 /* NSString+COMd5.m in Sources */,
 				6DBBF5C01DEECD8600495C1C /* Book.m in Sources */,
+				6D2E55A21DF0213900C16A11 /* fullHistoryViewController.m in Sources */,
 				6DEEEE691DEED14600208F49 /* COUtils.m in Sources */,
 				6DEEEE631DEECF0300208F49 /* IISvcUtil.m in Sources */,
 				6D792DF91DEEC5DF0058792D /* AppDelegate.m in Sources */,

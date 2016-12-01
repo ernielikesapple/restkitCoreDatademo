@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <RestKit/RestKit.h>
 
-@interface fullHistoryViewController : UITableViewController
+@interface fullHistoryViewController : UIViewController <UITableViewDataSource, UITableViewDelegate,NSFetchedResultsControllerDelegate>
 
-@property (nonatomic, strong) NSString *query;
+@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
+//@property (nonatomic, strong) NSString *query;
 @end

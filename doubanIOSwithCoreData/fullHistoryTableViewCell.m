@@ -11,12 +11,19 @@
 
 @interface fullHistoryTableViewCell()
 
+//@property (strong, nonatomic) IBOutlet UIImageView *image;
+//@property (strong, nonatomic) IBOutlet UILabel *title;
+//
+//@property (strong, nonatomic) IBOutlet UILabel *publisher;
+//@property (strong, nonatomic) IBOutlet UILabel *lbISBN;
+//@property (strong, nonatomic) IBOutlet UILabel *pages;
+
 @property (strong, nonatomic) IBOutlet UIImageView *image;
 @property (strong, nonatomic) IBOutlet UILabel *title;
-
 @property (strong, nonatomic) IBOutlet UILabel *publisher;
 @property (strong, nonatomic) IBOutlet UILabel *lbISBN;
 @property (strong, nonatomic) IBOutlet UILabel *pages;
+
 
 @end
 

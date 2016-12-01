@@ -39,6 +39,9 @@ NSString *const SEARCH_URL = @"search";
     
     [manager getObject:nil path:SEARCH_URL parameters:@{@"q":query, @"count":@(5)} success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
         callback(operation, mappingResult, nil);
+        
+        
+        
     } failure:^(RKObjectRequestOperation *operation, NSError *error) {
         callback(operation, nil, error);
         
