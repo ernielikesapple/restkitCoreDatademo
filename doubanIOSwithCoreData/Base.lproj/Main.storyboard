@@ -17,27 +17,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwS-Hu-5tF">
-                                <rect key="frame" x="167" y="199" width="267" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3X-Lt-Iom">
-                                <rect key="frame" x="248" y="308" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="250" y="306" width="47" height="30"/>
+                                <state key="normal" title="search"/>
                                 <connections>
-                                    <segue destination="B3K-wv-Ia9" kind="show" id="neE-Bl-AtY"/>
+                                    <segue destination="B3K-wv-Ia9" kind="show" identifier="" id="neE-Bl-AtY"/>
                                 </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e7m-wg-SzX">
+                                <rect key="frame" x="238" y="235" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qap-ov-RmV">
+                                <rect key="frame" x="218" y="390" width="112" height="30"/>
+                                <state key="normal" title="show full history"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="roK-IO-sOx"/>
+                    <connections>
+                        <outlet property="btSearch" destination="p3X-Lt-Iom" id="IYg-DA-1CL"/>
+                        <outlet property="searchField" destination="e7m-wg-SzX" id="JgT-FP-1Jv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="917" y="283"/>
+            <point key="canvasLocation" x="844" y="189"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="Z3W-7A-yix">
@@ -62,9 +69,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="157.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oqm-x3-Yie">
-                                                    <rect key="frame" x="8" y="15" width="124" height="128"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujX-Kh-bzw">
                                                     <rect key="frame" x="162" y="24" width="34" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -89,6 +93,9 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oqm-x3-Yie">
+                                                    <rect key="frame" x="8" y="15" width="124" height="128"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -110,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jcl-oo-FKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1715" y="278"/>
+            <point key="canvasLocation" x="1837" y="189"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3W8-07-R7K">
@@ -128,7 +135,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="40R-lZ-zlk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="474" y="278"/>
+            <point key="canvasLocation" x="50" y="243"/>
         </scene>
     </scenes>
 </document>

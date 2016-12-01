@@ -14,7 +14,7 @@
 // Insert code here to add functionality to your managed object subclass
 +(RKObjectMapping *)objectMapping {
     
-    RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[self class]];
+    RKEntityMapping *mapping = [RKEntityMapping mappingForEntityForName:@"BookEntity" inManagedObjectStore:[RKManagedObjectStore defaultStore]];
     
     [mapping addAttributeMappingsFromArray:@[@"isbn13", @"pages", @"title", @"publisher"]];
     [mapping addAttributeMappingsFromDictionary:@{@"images.medium":@"image"}];

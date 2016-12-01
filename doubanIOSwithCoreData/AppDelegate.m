@@ -7,9 +7,23 @@
 //
 
 #import "AppDelegate.h"
+#import <RestKit/RestKit.h>
+#import <RestKit/CoreData.h>
+#import <CoreData/CoreData.h>
+#import <MagicalRecord/MagicalRecord.h>
+#import "Book.h"
 
-@interface AppDelegate ()
+static NSString * BASE_URL = @"https://api.douban.com/v2/book/";
+static NSString * SEARCH_URL = @"search";
 
+
+//@interface AppDelegate ()
+//
+//@end
+
+@interface NSManagedObjectContext ()
++ (void)MR_setRootSavingContext:(NSManagedObjectContext *)context;
++ (void)MR_setDefaultContext:(NSManagedObjectContext *)moc;
 @end
 
 @implementation AppDelegate
@@ -17,6 +31,48 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //configure core data integration with the object manager
+    NSManagedObjectModel *managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
+    RKManagedObjectStore *managedObjectStore = [[RKManagedObjectStore alloc]initWithManagedObjectModel:managedObjectModel];
+    
+    NSError *error;
+    
+    BOOL success =RKEnsureDirectoryExistsAtPath(RKApplicationDataDirectory(), &error);
+    if (!success) {
+        RKLogError(@"fail to create application data directory at path '%@': %@ ",RKApplicationDataDirectory(),error);
+    }
+    NSString *path = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"Store.sqlite"];
+    NSPersistentStore *persistentStore = [managedObjectStore addSQLitePersistentStoreAtPath:path fromSeedDatabaseAtPath:nil withConfiguration:nil options:nil error:&error];
+    if(!persistentStore){
+        RKLogError(@"Failed adding persistent store at path '%@':%@",path,error);
+    }
+    //create the managed object contexts
+    [managedObjectStore createManagedObjectContexts];
+    
+    
+    //configure magicalRecord to use RestKit's Core Data stack
+    [NSPersistentStoreCoordinator MR_setDefaultStoreCoordinator:managedObjectStore.persistentStoreCoordinator];
+    [NSManagedObjectContext MR_setDefaultContext:managedObjectStore.persistentStoreManagedObjectContext];
+    [NSManagedObjectContext MR_setDefaultContext:managedObjectStore.mainQueueManagedObjectContext];
+    
+    //configure a managd object cache to ensure we do not create duplicate objects
+    managedObjectStore.managedObjectCache = [[RKInMemoryManagedObjectCache alloc]initWithManagedObjectContext:managedObjectStore.persistentStoreManagedObjectContext];
+    
+    //create the manager
+    RKObjectManager *manager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:BASE_URL]];
+    manager.managedObjectStore = managedObjectStore;
+    
+    
+    
+    
+    //add responseDescriptor
+    
+    RKObjectMapping *mapping = [Book objectMapping];
+    
+    RKResponseDescriptor *reponseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:mapping method:RKRequestMethodGET pathPattern:SEARCH_URL keyPath:@"books" statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+    [manager addResponseDescriptor:reponseDescriptor];
+    
+    
     return YES;
 }
 
