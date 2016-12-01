@@ -11,7 +11,13 @@
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *searchField;
+
+
+
+//???????
 @property (strong, nonatomic) IBOutlet UIButton *btSearch;
+//???
+
 
 @end
 
@@ -33,6 +39,7 @@
     dest.query = self.searchField.text;
 }
 
+//???????
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
     return self.searchField.text.length >0;
 }

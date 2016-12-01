@@ -50,9 +50,9 @@ static NSString * SEARCH_URL = @"search";
     [managedObjectStore createManagedObjectContexts];
     
     
-    //configure magicalRecord to use RestKit's Core Data stack
+    // configure magicalRecord to use RestKit's Core Data stack
     [NSPersistentStoreCoordinator MR_setDefaultStoreCoordinator:managedObjectStore.persistentStoreCoordinator];
-    [NSManagedObjectContext MR_setDefaultContext:managedObjectStore.persistentStoreManagedObjectContext];
+    [NSManagedObjectContext MR_setRootSavingContext:managedObjectStore.persistentStoreManagedObjectContext];
     [NSManagedObjectContext MR_setDefaultContext:managedObjectStore.mainQueueManagedObjectContext];
     
     //configure a managd object cache to ensure we do not create duplicate objects

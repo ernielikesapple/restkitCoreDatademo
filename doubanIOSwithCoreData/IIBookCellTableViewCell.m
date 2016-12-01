@@ -38,7 +38,13 @@
 
 
 - (void)configWithBook:(Book *)book {
-    [self.image loadImageFromURL:book.imageURL placeholderImage:nil cachingKey:book.imageKey];
+    //[self.image loadImageFromURL:book.imageURL placeholderImage:nil cachingKey:book.imageKey];
+    
+    //set the image
+    NSString *url = book.imageURL;
+    NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
+    self.image = [UIImage imageWithData:data];
+    
     self.title.text = book.title;
     self.publisher.text = book.publisher;
     self.pages.text = [NSString stringWithFormat:@"%ld", book.pages.integerValue];

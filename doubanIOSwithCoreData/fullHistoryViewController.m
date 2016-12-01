@@ -25,15 +25,23 @@
 -(void)viewDidLoad{
     [super viewDidLoad];
     
-    self.tableView.dataSource = self;
-    self.tableView.delegate = self;
-    
+//    self.tableView.dataSource = self;
+//    self.tableView.delegate = self;
+   
+}
+
+
+
+-(void)viewWillAppear:(BOOL)animated{
+
+    [super viewWillAppear:animated];
     [self loadData];
+
 }
 
 -(void)loadData{
 
-    self.books = [Book MR_findAll]; //IN CONTEXT????要加入吗？
+    self.books = [Book MR_findAll]; //IN CONTEXT????要写入参数吗这个取是从default context里取所有详见training中ptusercourse.m中为什么要标明context？？？
     
   
     
@@ -50,7 +58,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     Book *book = self.books[indexPath.row];
     
-    fullHistoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BookCell"];
+    fullHistoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FullHistoryTableViewCell"];
     [cell configWithBook:book];
     
     return cell;

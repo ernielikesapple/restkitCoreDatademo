@@ -16,8 +16,19 @@
     
     RKEntityMapping *mapping = [RKEntityMapping mappingForEntityForName:@"BookEntity" inManagedObjectStore:[RKManagedObjectStore defaultStore]];
     
-    [mapping addAttributeMappingsFromArray:@[@"isbn13", @"pages", @"title", @"publisher"]];
-    [mapping addAttributeMappingsFromDictionary:@{@"images.medium":@"image"}];
+    //[mapping addAttributeMappingsFromArray:@[@"isbn13", @"pages", @"title", @"publisher"]];
+    [mapping addAttributeMappingsFromDictionary:@{
+                                                  @"isbn13": @"isbn13",
+                                                  @"pages": @"pages",
+                                                  @"title": @"title",
+                                                  @"publisher":@"publisher",
+                                                  @"images":@"image",
+                                                  }];
+    //???????
+ //   [mapping addAttributeMappingsFromDictionary:@{@"images.medium":@"image"}];
+   
+    
+    
     
     return mapping;
 }

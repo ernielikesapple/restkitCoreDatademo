@@ -29,13 +29,13 @@
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
-//    [IISvcUtil searchForBooks:self.query callback:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult, NSError *error) {
-//        if (!error) {
-//            self.books = mappingResult.array;
-//            [self.tableView reloadData];
-//        }
-//    }];
-//    
+    [IISvcUtil searchForBooks:self.query callback:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult, NSError *error) {
+        if (!error) {
+            self.books = mappingResult.array;
+            [self.tableView reloadData];
+        }
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
