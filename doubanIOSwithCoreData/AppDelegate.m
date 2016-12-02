@@ -33,22 +33,24 @@ static NSString * SEARCH_URL = @"search";
     // Override point for customization after application launch.
     //configure core data integration with the object manager
     NSManagedObjectModel *managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
-    RKManagedObjectStore *managedObjectStore = [[RKManagedObjectStore alloc]initWithManagedObjectModel:managedObjectModel];
+    RKManagedObjectStore *managedObjectStore = [[RKManagedObjectStore alloc] initWithManagedObjectModel:managedObjectModel];
+    
     
     
     [RKManagedObjectStore setDefaultStore:managedObjectStore];
 
     NSError *error;
     
-    BOOL success =RKEnsureDirectoryExistsAtPath(RKApplicationDataDirectory(), &error);
-    if (!success) {
-        RKLogError(@"fail to create application data directory at path '%@': %@ ",RKApplicationDataDirectory(),error);
+    BOOL success = RKEnsureDirectoryExistsAtPath(RKApplicationDataDirectory(), &error);
+    if (! success) {
+        RKLogError(@"Failed to create Application Data Directory at path '%@': %@", RKApplicationDataDirectory(), error);
     }
     NSString *path = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"Store.sqlite"];
     NSPersistentStore *persistentStore = [managedObjectStore addSQLitePersistentStoreAtPath:path fromSeedDatabaseAtPath:nil withConfiguration:nil options:nil error:&error];
-    if(!persistentStore){
-        RKLogError(@"Failed adding persistent store at path '%@':%@",path,error);
+    if (! persistentStore) {
+        RKLogError(@"Failed adding persistent store at path '%@': %@", path, error);
     }
+
     //???
     [managedObjectStore addInMemoryPersistentStore:&error];
     //create the managed object contexts
@@ -59,8 +61,9 @@ static NSString * SEARCH_URL = @"search";
     // configure magicalRecord to use RestKit's Core Data stack
     
     [NSPersistentStoreCoordinator MR_setDefaultStoreCoordinator:managedObjectStore.persistentStoreCoordinator];
-    NSLog(@"-----111%@",managedObjectStore.persistentStoreCoordinator);
-    NSLog(@"-----222%@",managedObjectStore.persistentStoreCoordinator.managedObjectModel);
+  
+    // NSLog(@"-----111%@",managedObjectStore.persistentStoreCoordinator);
+    //NSLog(@"-----222%@",managedObjectStore.persistentStoreCoordinator.managedObjectModel);
     
     //NSLog(@"Model is %@",context.persistentStoreCoordinator.managedObjectModel);
     [NSManagedObjectContext MR_setRootSavingContext:managedObjectStore.persistentStoreManagedObjectContext];
