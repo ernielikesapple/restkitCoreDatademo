@@ -22,7 +22,8 @@
                                                   @"pages": @"pages",
                                                   @"title": @"title",
                                                   @"publisher":@"publisher",
-                                                  @"images":@"image",
+                                                  @"images.large":@"image",
+                                                  
                                                   }];
     //???????
  //   [mapping addAttributeMappingsFromDictionary:@{@"images.medium":@"image"}];

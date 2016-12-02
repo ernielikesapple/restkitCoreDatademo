@@ -25,10 +25,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+  //NSLog(@"2");
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-    
+  //  NSLog(@"3");
     [IISvcUtil searchForBooks:self.query callback:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult, NSError *error) {
         if (!error) {
             self.books = mappingResult.array;
@@ -37,6 +37,10 @@
     }];
     
 }
+
+//-(void)viewWillAppear:(BOOL)animated{
+//    NSLog(@"4");
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -56,6 +60,7 @@
 #pragma mark - tableView
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+   // NSLog(@"1");
     return 100;
 }
 

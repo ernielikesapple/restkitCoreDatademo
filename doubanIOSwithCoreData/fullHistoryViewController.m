@@ -15,7 +15,7 @@
 
 static NSString * BASE_URL = @"https://api.douban.com/v2/book/";
 static NSString * SEARCH_URL = @"search";
-
+//https://api.douban.com/v2/book/search?q=ios&count=5
 
 @interface fullHistoryViewController()
 @property (nonatomic, strong) NSArray *books;
@@ -40,14 +40,14 @@ static NSString * SEARCH_URL = @"search";
    [self loadData];
 
 }
-
+//
 -(void)fetchDatafromDataBase{
     // Set debug logging level. Set to 'RKLogLevelTrace' to see JSON payload
     RKLogConfigureByName("RestKit/Network", RKLogLevelDebug);
     
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"BookEntity"];
     //取出的排序
-    NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:@"title" ascending:NO];
+    NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:@"pages" ascending:YES];
     fetchRequest.sortDescriptors = @[descriptor];
     NSError *error = nil;
     
@@ -68,9 +68,15 @@ static NSString * SEARCH_URL = @"search";
 
 
 -(void)loadData{
-
-    //self.books = [Book MR_findAll]; //IN CONTEXT????要写入参数吗这个取是从default context里取所有详见training中ptusercourse.m中为什么要标明context？？？
-    [self fetchDatafromDataBase];
+     [self fetchDatafromDataBase];
+    //self.books = [Book MR_findAll];
+    NSNumber *count = [Book MR_numberOfEntities];
+    NSLog(@"the number of entity is ------%@",count);
+    
+    //self.books = [Book MR_findFirstInContext:[NSManagedObjectContext MR_contextForCurrentThread]];
+   // self.books = [Book MR_findAllInContext:[NSManagedObjectContext MR_contextForCurrentThread]];
+    //IN CONTEXT????要写入参数吗这个取是从default context里取所有详见training中ptusercourse.m中为什么要标明context？？？
+   
     [self.tableView reloadData];
 }
 
@@ -79,7 +85,8 @@ static NSString * SEARCH_URL = @"search";
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     id<NSFetchedResultsSectionInfo>sectionInfo = [self.fetchedResultsController.sections objectAtIndex:section];
     return [sectionInfo numberOfObjects];
-    // return 1;
+  //  return self.books.count;
+ 
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -87,21 +94,18 @@ static NSString * SEARCH_URL = @"search";
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    //Book *book = self.books[indexPath.row];
+    
+      //Book *book = self.books[indexPath.row];
   
-    
-    
-    fullHistoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"fullHistoryTableViewCell"];
+      fullHistoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"fullHistoryTableViewCell"];
+
      Book *book = [self.fetchedResultsController objectAtIndexPath:indexPath];
+   
     [cell configWithBook:book];
 
     return cell;
 }
-//
-//
-//-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    return self.books.count;
-//}
+
 
 
 

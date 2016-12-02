@@ -21,7 +21,7 @@ static NSString * SEARCH_URL = @"search";
 //
 //@end
 
-@interface NSManagedObjectContext ()
+@interface NSManagedObjectContext()
 + (void)MR_setRootSavingContext:(NSManagedObjectContext *)context;
 + (void)MR_setDefaultContext:(NSManagedObjectContext *)moc;
 @end
@@ -35,6 +35,9 @@ static NSString * SEARCH_URL = @"search";
     NSManagedObjectModel *managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
     RKManagedObjectStore *managedObjectStore = [[RKManagedObjectStore alloc]initWithManagedObjectModel:managedObjectModel];
     
+    
+    [RKManagedObjectStore setDefaultStore:managedObjectStore];
+
     NSError *error;
     
     BOOL success =RKEnsureDirectoryExistsAtPath(RKApplicationDataDirectory(), &error);
@@ -46,12 +49,20 @@ static NSString * SEARCH_URL = @"search";
     if(!persistentStore){
         RKLogError(@"Failed adding persistent store at path '%@':%@",path,error);
     }
+    //???
+    [managedObjectStore addInMemoryPersistentStore:&error];
     //create the managed object contexts
     [managedObjectStore createManagedObjectContexts];
     
-    
+    //[MagicalRecord setupCoreDataStackWithStoreNamed:@"Store.sqlite"];
+    [MagicalRecord setupCoreDataStackWithStoreNamed:@"doubanIOSwithCoreData"];
     // configure magicalRecord to use RestKit's Core Data stack
+    
     [NSPersistentStoreCoordinator MR_setDefaultStoreCoordinator:managedObjectStore.persistentStoreCoordinator];
+    NSLog(@"-----111%@",managedObjectStore.persistentStoreCoordinator);
+    NSLog(@"-----222%@",managedObjectStore.persistentStoreCoordinator.managedObjectModel);
+    
+    //NSLog(@"Model is %@",context.persistentStoreCoordinator.managedObjectModel);
     [NSManagedObjectContext MR_setRootSavingContext:managedObjectStore.persistentStoreManagedObjectContext];
     [NSManagedObjectContext MR_setDefaultContext:managedObjectStore.mainQueueManagedObjectContext];
     
@@ -60,7 +71,7 @@ static NSString * SEARCH_URL = @"search";
     
     //create the manager
     RKObjectManager *manager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:BASE_URL]];
-    manager.managedObjectStore = managedObjectStore;
+    manager.managedObjectStore = [RKManagedObjectStore defaultStore];//managedObjectStore;
     
     
     
@@ -96,6 +107,9 @@ static NSString * SEARCH_URL = @"search";
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+   // [MagicalRecord cleanUp];
+
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
 }

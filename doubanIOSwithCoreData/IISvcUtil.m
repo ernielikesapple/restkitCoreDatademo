@@ -38,11 +38,23 @@ NSString *const SEARCH_URL = @"search";
     RKObjectManager *manager = [RKObjectManager sharedManager];
     
     [manager getObject:nil path:SEARCH_URL parameters:@{@"q":query, @"count":@(5)} success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-        callback(operation, mappingResult, nil);
         
+//        NSArray *results = mappingResult.array;
+//    
+//        NSLog(@"----1");
+//        [MagicalRecord saveUsingCurrentThreadContextWithBlock:^(NSManagedObjectContext *localContext) {
+//             NSLog(@"------2");
+//            Book *book = results;
+//            
+//        }completion:^(BOOL succ, NSError *error) {
+//        callback(operation, mappingResult, nil);
+//        NSLog(@"----3");
+//        }];
         
+         callback(operation, mappingResult, nil);
         
     } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+         NSLog(@"----4");
         callback(operation, nil, error);
         
     }];
